@@ -1,7 +1,11 @@
 #include<iostream>
+#include<vector>
 #include"Account.h"
 #include"Transaction.h"
+#include"Date.h"
 using namespace std;
+
+int main(){
 
 Account A1("George", 1122, 1000);
 A1.deposit(30);
@@ -13,9 +17,11 @@ A1.withdraw(2);
 
 cout << "Account Name: " << A1.getname() << endl;
 cout << "ID #" << A1.getid() << endl;
-cout << "Current Balance: $" << A1.getbalance() << endl << endl;
+cout << "Balance: $" << A1.getbalance() << endl << endl;
 
 cout << "Transactions" << endl;
 
 A1.printinfo();
+
+return 0;
 }

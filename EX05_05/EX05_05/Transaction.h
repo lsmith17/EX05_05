@@ -1,7 +1,8 @@
 #ifndef Transaction_H
 #define Transaction_H
-
 #include<iostream>
+#include<vector>
+#include"Date.h"
 using namespace std;
 class Transaction
 {
@@ -14,41 +15,15 @@ private:
 
 public:
 	void Printinfo();
-	Transaction(){
-		type = ' ';
-		amount = 0;
-		balance = 0;
-		description = "";
-	}
-	Transaction(char newtype, double newamount, double newbalance, string newdescription){
-		type = newtype;
-		amount = newamount;
-		balance = newbalance;
-		description = newdescription;
-	}
-	char gettype(){
-		return type;
-	}
-	void settype(char type){
-		this->type = type;
-	}
-	double getamount(){
-		return amount;
-	}
-	void setamount(double amount){
-		this->amount = amount;
-	}
-	double getbalance(){
-		return balance;
-	}
-	void setbalance(double balance){
-		this->balance = balance;
-	}
-	string getdescription(){
-		return description;
-	}
-	void setdescription(string description){
-		this->description = description;
-	}
+	Transaction();
+	Transaction(char newtype, double newamount, double newbalance, string newdescription);
+	char gettype();
+	void settype(char type);
+	double getamount();
+	void setamount(double amount);
+	double getbalance();
+	void setbalance(double balance);
+	string getdescription();
+	void setdescription(string description);
 };
 #endif
