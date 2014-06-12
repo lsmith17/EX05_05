@@ -1,6 +1,10 @@
+#ifndef Date_H
+#define Date_H
+
 #include<iostream>
 #include<string>
 #include<ctime>
+using namespace std;
 
 class Date
 {
@@ -81,3 +85,4 @@ public:
 		return day;
 	}
 };
+#endif
