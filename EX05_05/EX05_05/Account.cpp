@@ -9,6 +9,7 @@ Account :: Account(){
 	balance = 0;
 	annualInterestRate = 1.5;
 }
+double Account::annualInterestRate = 0;
 Account :: Account(string newname, int newid, double newbal){
 	name = newname;
 	id = newid;
